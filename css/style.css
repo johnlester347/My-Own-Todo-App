@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  line-height: 1.5; }
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  margin-top: 2rem; }
+
+.form {
+  display: grid;
+  grid-template-columns: max-content 20rem;
+  grid-column-gap: 1rem;
+  grid-row-gap: 2rem;
+  justify-content: center;
+  height: 28rem; }
+  .form__notes {
+    outline: none;
+    padding: 1rem;
+    height: 4rem;
+    align-self: center; }
+
+label {
+  background-color: red;
+  padding: 1.5rem;
+  align-self: center; }
+
+.btn {
+  padding: 1.1rem 2rem;
+  outline: none;
+  background-color: #008cff;
+  border: 1px;
+  color: #fff;
+  grid-column: 1 / 3; }
+
+.results {
+  background-color: black;
+  height: 40rem;
+  align-self: none; }
+  .results__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: greenyellow;
+    list-style: none; }
+  .results__item {
+    border-right: 1px solid gray;
+    padding: 1rem; }
+
+.box {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: min-content; }
+  .box p {
+    color: #15ff00;
+    padding: 9px 9px; }
+
+.newbtn {
+  background-color: red;
+  align-self: center;
+  justify-self: center;
+  padding: 1rem 2rem;
+  border: none;
+  outline: none; }
